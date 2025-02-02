@@ -6,7 +6,7 @@ namespace Assignment04_ADV
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }

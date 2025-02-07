@@ -8,30 +8,30 @@ namespace Assignment04_ADV
 {
     internal class BookFunction
     {
-        public static string GetTitle(Book book)
+         public static string Gettitle(Book B)
         {
-            if(book is not null)
-            {
-                return $"Title:{book.Title}";
+            if(B is not null) { 
+            return B.Title;
             }
             return "Not Found";
         }
-        public static string GetAuthors(Book book)
+    public static string GetAuthor(Book B)
         {
-            string authors = string.Join(",", book.Author);
-           if(book is not null)
+           string author=string.Join(" ,",B.Author);
+            if(B is not null)
             {
-                return $"Authors:{authors}";
+                return author;
             }
-           return "Not Found";
+            return "Not found";
         }
-        public static string GetPrice(Book book)
+        public static string GetPrice(Book B)
         {
-            if (book is not null)
+            if(B is not null)
             {
-                return $"Price:{book.Price}";
+                return $"{B.Price}";
             }
             return "Not Found";
         }
+    
     }
 }

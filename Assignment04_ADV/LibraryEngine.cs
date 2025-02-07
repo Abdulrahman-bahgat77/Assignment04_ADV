@@ -14,7 +14,7 @@ namespace Assignment04_ADV
             foreach(Book b in book )
             {
                 Console.WriteLine(Fptr(b));
-            }
+            } 
         }
 
         public static void ProcessBook(List<Book> book, Func<Book,string> Fptr)
